@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="vastra.css">
+  <title>Manage Products</title>
+  <style>
+    .add-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+    <div class="admin">
+        <h1>Welcome Admin</h1>
+        <h1>Manage Products</h1>
+    </div>
+    <div class="admin_table">
+        <table>
+          <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Product Stocked Date</th>
+            <th>Stock</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>White Hoodie</td>
+            <td>2023-07-02</td>
+            <td>4</td>
+            <td><a href="" class="btn">DELETE</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Grey Hoodie</td>
+            <td>2023-07-03</td>
+            <td>6</td>
+            <td><a href="" class="btn">DELETE</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Black T-shirt</td>
+            <td>2023-07-04</td>
+            <td>4</td>
+            <td><a href="" class="btn">DELETE</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>White T-shirt</td>
+            <td>2023-07-05</td>
+            <td>8</td>
+            <td><a href="" class="btn">DELETE</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Brown T-shirt</td>
+            <td>2023-07-06</td>
+            <td>7</td>
+            <td><a href="" class="btn">DELETE</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Sweater</td>
+            <td>2023-07-07</td>
+            <td>6</td>
+            <td><a href="" class="btn">DELETE</a></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Black Cargo</td>
+            <td>2023-07-08</td>
+            <td>9</td>
+            <td><a href="" class="btn">DELETE</a></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Printed Cargo</td>
+            <td>2023-07-09</td>
+            <td>5</td>
+            <td><a href="" class="btn">DELETE</a></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>White Cargo</td>
+            <td>2023-07-10</td>
+            <td>7</td>
+            <td><a href="" class="btn">DELETE</a></td>
+          </tr>
+        </table>
+      </div>
+    <form  action="admin.html" class="add">
+        <h1>ADD PRODUCT</h1>
+        <label>Product ID</label>
+        <input type="id" id="productid" value="ID">
+        <label>Product Name</label>
+        <input type="text" id="name" value="Product name">
+        <label>Product stock date</label>
+        <input type="date" id="date" value="date">
+        <label >Stock</label>
+    <input type="number" id="as" value="stock number" >
+</form>
+    <center><a href="admi.html" class="btn">Add</a></center>
+    
+  <footer>
+    <hr>
+    <p>&copy; 2023 Vastra. All rights reserved.</p>
+  </footer>
+  <script>
+    function deleteProduct(productId) {
+      var row = document.getElementById(productId);
+      row.parentNode.removeChild(row);
+    }
+
+  </script>
+</body>
+</html>
+</body>
+</html>
